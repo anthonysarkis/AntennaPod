@@ -2,7 +2,8 @@ package com.example.emailpage;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
 
 /**
  * Example local unit test, which will execute on the development machine (host).
