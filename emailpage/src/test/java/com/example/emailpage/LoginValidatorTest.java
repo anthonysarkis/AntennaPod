@@ -11,6 +11,7 @@ import static org.junit.Assert.assertFalse;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 public class LoginValidatorTest {
+    Validator Validator = new Validator();
 
     @Test
     public void emailValidator_CorrectEmail_ReturnsTrue() {
@@ -30,22 +31,5 @@ public class LoginValidatorTest {
     @Test
     public void passwordValidator_CorrectPassword_ReturnsFalse() {
         assertFalse(Validator.isValidPassword("password"));
-    }
-
-    
-    Validator Validator = new Validator();
-}
-
-
-
-class Validator {
-    public boolean isValidEmail(String email) {
-        if (email == "name") return false;
-        return true;
-    }
-
-    public boolean isValidPassword(String password) {
-        if (password == "password") return false;
-        return true;
     }
 }
