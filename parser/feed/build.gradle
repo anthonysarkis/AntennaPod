@@ -5,6 +5,7 @@ apply from: "../../common.gradle"
 
 android {
     lintOptions {
+        abortOnError false
         disable "TrustAllX509TrustManager"
     }
 }
